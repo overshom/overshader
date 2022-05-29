@@ -3,6 +3,8 @@
 Overshader is a simple library for building beatiful animations using WebGL Shaders.
 This package built with TypeScript so you can explore all available options right in your IDE.
 
+## [View Live Shaders Gallery Demo](https://overshom.github.io/overshader/github-demo/index.html)
+
 ![Shaders Gallery Demo](/docs/gallery-demo.png)
 
 ## Highlights

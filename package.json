@@ -1,6 +1,6 @@
 {
   "name": "overshader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Oleksii Shnyra",
     "url": "https://shnyra.com"
@@ -13,8 +13,8 @@
   "module": "./dist/index.es.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.es.js",
-      "require": "./dist/my-lib.umd.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
   "repository": {

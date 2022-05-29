@@ -1,0 +1,13 @@
+lockfileVersion: 5.4
+
+specifiers:
+  overshader: ^1.0.3
+
+dependencies:
+  overshader: 1.0.3
+
+packages:
+
+  /overshader/1.0.3:
+    resolution: {integrity: sha512-MRCuUDAUEQhN5TNBblDDZQ6WMPze4AOJnGgdXHX4T/kJ3fcHJr6JOYwSDW9Y+FVW5UVOfpowXbYREYl/cLF5AA==}
+    dev: false

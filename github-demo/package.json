@@ -1,0 +1,9 @@
+{
+  "name": "github-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "overshader": "^1.0.3"
+  }
+}

@@ -24,6 +24,26 @@ This package built with TypeScript so you can explore all available options righ
 yarn add overshader
 ```
 
+OR directly in HTML
+
+```html
+<script src="https://unpkg.com/overshader@1.0.3"></script>
+```
+
+OR as ES module
+
+```html
+<script type="module" async>
+    import "https://unpkg.com/overshader@1.0.3";
+    const {
+        runWebglProgram
+    } = Overshader;
+    runWebglProgram({
+        // ...
+    });
+</script>
+```
+
 ## Verify it is working
 
 Just provide CSS selector for canvas container

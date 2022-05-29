@@ -5,7 +5,7 @@ export default defineConfig({
   build: {
     outDir: './dist/',
     lib: {
-      entry: 'src/main.ts',
+      entry: 'src/index.ts',
       // global variable for UMD bundle
       name: 'Overshader',
       fileName: 'index',

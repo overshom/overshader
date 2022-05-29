@@ -1,0 +1,42 @@
+{
+  "name": "overshader",
+  "version": "1.0.0",
+  "author": {
+    "name": "Oleksii Shnyra",
+    "url": "https://shnyra.com"
+  },
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.es.js",
+      "require": "./dist/my-lib.umd.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overshom/overshader"
+  },
+  "keywords": [
+    "TypeScript",
+    "WebGL",
+    "shader",
+    "fragment shader",
+    "vertex shader"
+  ],
+  "scripts": {
+    "dev": "vite --open",
+    "build": "tsc && vite build",
+    "preview": "vite preview --open",
+    "pretty": "prettier --write \"./**/*.{ts,tsx,json}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "typescript": "4.7.2",
+    "vite": "2.9.9"
+  }
+}

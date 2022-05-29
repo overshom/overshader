@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.webgl-canvas-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.programControls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.programControls:hover {
+  opacity: 1;
+}

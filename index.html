@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <style>
+      html {
+        background: #544;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        place-content: space-evenly;
+      }
+      .gallery > div {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+        max-height: 100%;
+        cursor: pointer;
+      }
+    </style>
+    <div class="gallery"></div>
+    <script type="module" src="/src-demo/multi.ts"></script>
+  </body>
+</html>

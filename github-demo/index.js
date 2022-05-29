@@ -1,3 +1,6 @@
+const rootBase =
+  window.location.hostname === 'localhost' ? '' : 'https://overshom.github.io/overshader';
+
 /**
  * @type {import('overshader')}
  */
@@ -26,8 +29,8 @@ const insideCanvas = cb => {
 insideCanvas(selector => {
   runWebglProgram({
     canvasContainer: selector,
-    fragmentShaderURL: '/assets/shaders/tubes.glsl',
-    textures: ['/assets/textures/texture-soil.jpeg'],
+    fragmentShaderURL: `${rootBase}/assets/shaders/tubes.glsl`,
+    textures: [`${rootBase}/assets/textures/texture-soil.jpeg`],
     // lower resolution for Retina screen for better performance
     devicePixelRatio: 1,
   });
@@ -36,7 +39,7 @@ insideCanvas(selector => {
 insideCanvas(selector => {
   runWebglProgram({
     canvasContainer: selector,
-    fragmentShaderURL: '/assets/shaders/glass.glsl',
+    fragmentShaderURL: `${rootBase}/assets/shaders/glass.glsl`,
     contextAttributes: {
       alpha: false,
     },
@@ -46,8 +49,11 @@ insideCanvas(selector => {
 insideCanvas(selector => {
   runWebglProgram({
     canvasContainer: selector,
-    fragmentShaderURL: '/assets/shaders/matrix.glsl',
-    textures: ['/assets/textures/texture-font.png', '/assets/textures/texture-noise.png'],
+    fragmentShaderURL: `${rootBase}/assets/shaders/matrix.glsl`,
+    textures: [
+      `${rootBase}/assets/textures/texture-font.png`,
+      `${rootBase}/assets/textures/texture-noise.png`,
+    ],
     initialTimeShift: Math.random() * 1e3 * 1,
   });
 });
@@ -55,14 +61,14 @@ insideCanvas(selector => {
 insideCanvas(selector => {
   runWebglProgram({
     canvasContainer: selector,
-    fragmentShaderURL: '/assets/shaders/metaball.glsl',
+    fragmentShaderURL: `${rootBase}/assets/shaders/metaball.glsl`,
   });
 });
 
 insideCanvas(selector => {
   runWebglProgram({
     canvasContainer: selector,
-    fragmentShaderURL: '/assets/shaders/helix.glsl',
+    fragmentShaderURL: `${rootBase}/assets/shaders/helix.glsl`,
     contextAttributes: {
       alpha: true,
       premultipliedAlpha: false,
@@ -73,7 +79,7 @@ insideCanvas(selector => {
 insideCanvas(selector => {
   runWebglProgram({
     canvasContainer: selector,
-    fragmentShaderURL: '/assets/shaders/debug.glsl',
+    fragmentShaderURL: `${rootBase}/assets/shaders/debug.glsl`,
     onFirstRender(controls) {
       const upd = () => {
         controls.setUniform3fv('u_value', [

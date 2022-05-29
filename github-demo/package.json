@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "overshader": "^1.0.3"
+  "scripts": {
+    "1serve": "live-server $CWD/../ --port=3200 --open=github-demo/index.html",
+    "serve": "node live-server"
+  },
+  "type": "module",
+  "devDependencies": {
+    "overshader": "^1.0.3",
+    "live-server": "^1.2.2"
   }
 }

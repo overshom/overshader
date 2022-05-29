@@ -1,3 +1,10 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  place-content: space-evenly;
+}
+
 .gallery > div {
   display: inline-block;
   width: 300px;

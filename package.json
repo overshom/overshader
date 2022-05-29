@@ -1,6 +1,6 @@
 {
   "name": "overshader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Oleksii Shnyra",
     "url": "https://shnyra.com"
@@ -37,6 +37,7 @@
   "devDependencies": {
     "prettier": "^2.6.2",
     "typescript": "4.7.2",
-    "vite": "2.9.9"
+    "vite": "2.9.9",
+    "vite-plugin-dts": "^1.2.0"
   }
 }
